@@ -1,9 +1,9 @@
-- @sitename = "Lake Jackson Family Practice"
+- @sitename = "Avia Issurance"
 
 // MAIN NAVIGATION
 - @link1 = ["Home", "/home"]
-- @link2 = ["Doctors", "/doctors"]
-- @link3 = ["Facility", "/facility"]
+- @link2 = ["About", "/about"]
+- @link3 = ["Testimonials", "/testimonials"]
 - @link4 = ["Services", "/services"]
 - @link5 = ["Contact", "/contact"]
 
@@ -74,12 +74,12 @@
     :javascript
       $(window).load(function() {
           $('#slider').nivoSlider({
-                  effect:'slideInLeft', // Specify sets like: 'fold,fade,sliceDown'
+                  effect:'boxRain', // Specify sets like: 'fold,fade,sliceDown'
                   slices: 15, // For slice animations
-                  boxCols: 19, // For box animations
+                  boxCols: 15, // For box animations
                   boxRows: 8, // For box animations
                   animSpeed: 600, // Slide transition speed
-                  pauseTime: 6000, // How long each slide will show
+                  pauseTime: 4000, // How long each slide will show
                   startSlide: 0, // Set starting Slide (0 index)
                   directionNav: true, // Next & Prev navigation
                   directionNavHide: true, // Only show on hover
@@ -198,6 +198,9 @@
           /   %a#three.topnav{:href => @link3[1]}
           /     =@link3[0]
           %li
+            %a#four.topnav{:href => @link3[1]}
+              =@link3[0]
+          %li
             %a#four.topnav{:href => @link4[1]}
               =@link4[0]
           %li
@@ -213,7 +216,7 @@
             &nbsp;
             .row
               %p.logo-sm
-                %img{:src => "/images/logo-sm.jpg", :alt => @sitename+" Logo"}
+                %img{:src => "/images/logo-sm.png", :alt => @sitename+" Logo"}
               %p=@sitename
             .row
               %p

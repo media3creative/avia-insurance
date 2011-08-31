@@ -42,9 +42,9 @@
 
 .bg-gradient-secondary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#de3141), to(#be1e2d));
+  background: -webkit-gradient(linear, left top, left bottom, from(#89c925), to(#6c9e1d));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #de3141, #be1e2d);
+  background: -moz-linear-gradient(top, #89c925, #6c9e1d);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
   /* For Internet Explorer 8 */
@@ -263,9 +263,9 @@ b {
 
 .bg-gradient-secondary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#de3141), to(#be1e2d));
+  background: -webkit-gradient(linear, left top, left bottom, from(#89c925), to(#6c9e1d));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #de3141, #be1e2d);
+  background: -moz-linear-gradient(top, #89c925, #6c9e1d);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
   /* For Internet Explorer 8 */
@@ -1493,7 +1493,7 @@ div.ppt {
 .main .content .section, .main .content .main {
   position: relative;
   padding: 0 0 30px 0;
-  border-bottom: 1px dotted #be1e2d;
+  border-bottom: 1px dotted #6c9e1d;
 }
 .main .content .section:last-child, .main .content .main:last-child {
   padding-bottom: 0;

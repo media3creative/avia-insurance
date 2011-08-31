@@ -42,9 +42,9 @@
 
 .bg-gradient-secondary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#de3141), to(#be1e2d));
+  background: -webkit-gradient(linear, left top, left bottom, from(#89c925), to(#6c9e1d));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #de3141, #be1e2d);
+  background: -moz-linear-gradient(top, #89c925, #6c9e1d);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
   /* For Internet Explorer 8 */
@@ -263,9 +263,9 @@ b {
 
 .bg-gradient-secondary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#de3141), to(#be1e2d));
+  background: -webkit-gradient(linear, left top, left bottom, from(#89c925), to(#6c9e1d));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #de3141, #be1e2d);
+  background: -moz-linear-gradient(top, #89c925, #6c9e1d);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
   /* For Internet Explorer 8 */
@@ -397,8 +397,8 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   padding: 0;
 }
 .center #logo1 a img {
-  width: 282px;
-  height: 60px;
+  width: 113px;
+  height: 75px;
   margin: 0;
   padding: 0;
   border: 0;
@@ -409,7 +409,7 @@ ul#topnav {
   font-family: "EmbedFont-1";
   display: inline;
   float: right;
-  margin: -4px 30px 0 337px;
+  margin: -4px 30px 0 168px;
   padding: 0;
   color: #283a7d;
   font-size: 11px;
@@ -444,8 +444,8 @@ ul#topnav a.topnav {
 }
 
 ul#topnav li:hover a.topnav, ul#topnav li a.topnav:hover {
-  color: #be1e2d;
-  border-top: 4px solid #be1e2d;
+  color: #6c9e1d;
+  border-top: 4px solid #6c9e1d;
 }
 
 ul#topnav li .sub {
@@ -457,7 +457,7 @@ ul#topnav li .sub {
   left: 1px;
   background: #22316a;
   padding: 5px 0 6px 0;
-  border-top: 2px solid #be1e2d;
+  border-top: 2px solid #6c9e1d;
   z-index: 50;
 }
 
@@ -512,5 +512,5 @@ ul#topnav .sub ul li h2 {
 }
 
 .navigation-hover, body.one a#one, body.two a#two, body.five a#five, body.four a#four, body.three a#three {
-  border-top: 4px solid #be1e2d;
+  border-top: 4px solid #6c9e1d;
 }
