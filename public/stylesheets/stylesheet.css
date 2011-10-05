@@ -1394,14 +1394,14 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   height: 20px;
   overflow: hidden;
   *zoom: 1;
-  color: #948c79;
+  color: #89c925;
   background: #283a7d;
   font-size: 9px;
   font-weight: 200;
   text-transform: uppercase;
   line-height: 1.4em;
   letter-spacing: 1px;
-  border-top: 1px solid #22316a;
+  border-top: 1px solid #4761c4;
   z-index: 100;
 }
 .m3c-bar .copyright {
@@ -1421,7 +1421,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   text-decoration: none;
 }
 .m3c-bar a:hover {
-  color: #4761c4;
+  color: #b4d5ff;
   border-bottom: 0px solid #dddddd;
   text-decoration: none;
 }

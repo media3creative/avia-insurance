@@ -496,7 +496,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 .link p a {
   font-size: 12px;
-  color: #6c9e1d;
+  color: white;
 }
 .link p a:hover {
   color: #6c9e1d;
@@ -515,6 +515,14 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 .text p:last-child {
   margin-bottom: 15px;
+}
+.text p a {
+  color: #6c9e1d;
+  text-decoration: none;
+}
+.text p a:hover {
+  color: #283a7d;
+  text-decoration: none;
 }
 
 .button p.link {
