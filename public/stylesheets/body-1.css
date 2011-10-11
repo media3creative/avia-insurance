@@ -219,6 +219,10 @@ b {
   font-weight: bold;
 }
 
+p.indent {
+  padding-left: 30px !important;
+}
+
 .font-helvetica, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }

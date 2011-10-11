@@ -472,6 +472,10 @@ b {
   font-weight: bold;
 }
 
+p.indent {
+  padding-left: 30px !important;
+}
+
 .font-helvetica, body, .m3c-bar {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }

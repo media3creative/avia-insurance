@@ -3,8 +3,9 @@
 - @body_class = "four"
 
 - @sub0 = ["Services", "/services"]
-- @sub1 = ["Types of Insurance Coverage", "#coverages"]
-- @sub2 = ["Integrity. Professionalism. Reliability", "#background"]
+- @sub1 = ["Integrity. Professionalism. Reliability", "#background"]
+- @sub2 = ["Property Coverage for Bars, Taverns & Nightclubs", "#property"]
+- @sub3 = ["Liability Coverage for Bars, Taverns & Nightclubs", "#liability"]
 
 
 %link{:href => "stylesheets/body-2.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
@@ -23,9 +24,9 @@
     .content
       #four.main
         .content
-          %a{:name => @sub2[1]}
+          %a{:name => @sub1[1]}
           .section.no-image
-            %h1=@sub2[0]
+            %h1=@sub1[0]
             %p Avia Insurance is considered to have a specialty program dedicated specifically to the restaurant and bar industry.
             %p We have built a reputation in the industry based on the trust that we will always look to serve the best interest of our clients in both insurance price and insurance coverage. We have never let any of our clients down.
             %p
@@ -44,59 +45,238 @@
 
             
 
-          %a{:name => @sub1[1]}
+          %a{:name => @sub2[1]}
           .section.no-image
-            %h1=@sub1[0]
+            %h1=@sub2[0]
+            %p Click each section to expand information.
+
+            %a{:name => "hide21", :onclick => "return toggleMe('hide21')"}
+              %h2 Buildings and Structures >
+            #hide21{:style => "display:none"}
+              %p
+                Damage to your building structure can occur from a variety of events and sources, including, most commonly, fire, lightning, wind, vandalism and explosion. Building coverage typically encompasses the structure itself, completed additions to the structure, fixtures, permanently installed equipment, floor coverings, and cooking appliances.
+              %p.hide
+                %a{:onclick => "return toggleMe('hide21')", :href => "#hide21"}^ Hide
+
+
+            %a{:name => "hide22", :onclick => "return toggleMe('hide22')"}
+              %h2 Contents and Business Personal Property >
+            #hide22{:style => "display:none"}
+              %p Contents at the premises, or are required by lease or contract to insure, including tenants improvements, furniture, amusement equipment, stock, and other property. By default, Property policies will pay a covered claim at "Actual Cash Value," taking into account the age of the damaged property by depreciating its value, and, in practice, offering the bar owner a portion of the retail cost of new, similar property. "Replacement Cost," on the other hand, is a preferred method of reimbursement for damaged property and is commonly available.
+              %p.hide
+                %a{:onclick => "return toggleMe('hide22')", :href => "#hide22"}^ Show/Hide
+
+            %a{:name => "hide23", :onclick => "return toggleMe('hide23')"}
+              %h2 Computer Equipment (Electronic Data Processing) >
+            #hide23{:style => "display:none"}
+              %p Covers loss to computer equipment, data, software and media owned, leased or used in the Bar. 
+              %p As Bars rely more frequently on electronic equipment, this coverage is becoming more critical. 
+              %p.hide
+                %a{:onclick => "return toggleMe('hide23')", :href => "#hide23"}^ Show/Hide
+                
+            %a{:name => "hide24", :onclick => "return toggleMe('hide24')"}
+              %h2 Fine Arts >
+            #hide24{:style => "display:none"}
+              %p Provides coverage for loss or damage to works of art, including paintings, etchings, etched glass, sculptures, and rugs. 
+              %p.hide
+                %a{:onclick => "return toggleMe('hide24')", :href => "#hide42"}^ Show/Hide
+                
+            %a{:name => "hide25", :onclick => "return toggleMe('hide25')"}
+              %h2 Detached Signs >
+            #hide25{:style => "display:none"}
+              %p Provides coverage for all types of detached signs, including neon, fluorescent, electric, or mechanical.
+              %p.hide
+                %a{:onclick => "return toggleMe('hide25')", :href => "#hide25"}^ Show/Hide
+
+            %a{:name => "hide26", :onclick => "return toggleMe('hide26')"}
+              %h2 Crime Coverage - Employee Dishonesty  >
+            #hide26{:style => "display:none"}
+              %p Provides coverage to the bar for theft of property committed by an employee of the establishment. 
+              %p.hide
+                %a{:onclick => "return toggleMe('hide26')", :href => "#hide26"}^ Show/Hide
+
+            %a{:name => "hide27", :onclick => "return toggleMe('hide27')"}
+              %h2 Crime Coverage - Theft, Disappearance And Destruction Money and Securities  >
+            #hide27{:style => "display:none"}
+              %p Provides coverage for money and securities inside the insured's premises or at a banking premises against theft, disappearance or destruction. 
+              %p.hide
+                %a{:onclick => "return toggleMe('hide27')", :href => "#hide27"}^ Show/Hide
+
+            %a{:name => "hide28", :onclick => "return toggleMe('hide28')"}
+              %h2 Equipment Breakdown Coverage (Boiler & Machinery) >
+            #hide28{:style => "display:none"}
+              %p Equipment Breakdown Coverage insures against damage or breakdown of boilers, machinery or other mechanical devices. Bars and taverns relying on refrigeration equipment to store food have a need for coverage, in the event a refrigeration failure results in spoilage of food.
+              %p
+                This coverage has four separate parts:
+                %br
+                &mdash; Damage from an accident to the items covered 
+                %br
+                &mdash; Damage to the insured's other property caused by an accident to the items covered 
+                %br
+                &mdash; Loss of income due to damage to the item and/or damage to the other insured property 
+                %br
+                &mdash; Damage to property of others and bodily injury to others caused by an accident to the items covered.
+              %p.hide
+                %a{:onclick => "return toggleMe('hide28')", :href => "#hide28"}^ Show/Hide
+
+
+            %a{:name => "hide29", :onclick => "return toggleMe('hide29')"}
+              %h2 Spoilage to Perishable Stock >
+            #hide29{:style => "display:none"}
+              %p Covers loss or damage to perishable stock caused by equipment breakdown (and in some cases contamination) resulting from a disruption of electrical power to the building or suite. Coverage is often limited to "involuntary" power outages, which would exclude voluntary elimination of power at the building's electrical box.
+              %p We strongly encourage our policyholders to carry some limit of spoilage coverage; however, the appropriate limit varies by the amount of stock on hand at any given time.
+              %p.hide
+                %a{:onclick => "return toggleMe('hide29')", :href => "#hide29"}^ Show/Hide
+
+            %a{:name => "hide210", :onclick => "return toggleMe('hide210')"}
+              %h2 Ordinance Or Law Coverage  >
+            #hide210{:style => "display:none"}
+              %p Standard Property policies exclude coverage for any costs that are associated with building laws or codes. Bars often occupy older buildings that do not meet current building codes. A partial loss could quickly turn into a total loss and force the establishment out of business if this coverage is not purchased. 
+              %p Our policies can add back coverage for Ordinance or Law, typically in one or a combination of three methods:
+              %p.indent
+                %b Loss of Value to Undamaged Property.
+                Depending on the location of your insured building or property, municipal laws and building codes may require you to demolish your entire property after a partial loss-even that portion of the property not physically damaged at all. Since standard building policies are written for the sole purpose of replacing or repairing damaged portions of the property, no coverage is automatically available to reimburse a property owner in the event local building inspectors require the demolition (and replacement) of both the damaged and undamaged portions of the building. With Ordinance or Law coverage extending to the undamaged property, the building owner will recover the cost incurred to replace or rebuild undamaged property.
+              %p.indent
+                %b Demolition Costs to Undamaged Property.
+                When local laws require demolition of undamaged portions of the property after partial loss to the building, the costs incurred by the building owner to demolish these undamaged portions is not included within standard property policies. However, your policy may be endorsed to add coverage for such costs.
+              %p.indent
+                %b Increased Cost of Construction (due to Ordinance or Law).
+                Each year, efforts to make safer or more energy efficient buildings produce new building codes. Since standard policies specifically provide coverage for replacement or repair of property to its original condition, no coverage exists in the policy for the increased cost of construction caused by the invocation of an ordinance or law. Common examples of new or revised building codes include: (1) type or plumbing or electrical systems; (2) fire sprinkler installation or spacing; (3) fire doors, escapes, stairwells, and elevator systems; (4) excavation, flood control, drainage, foundation types or footings; (5) accessibility to the building or within the building for disabled persons; (6) energy efficient windows, improved insulation, and air conditioning or heating equipment; and (7) change in permitted occupancy. If your policy includes Increased Cost of Construction, costs associated with building code compliance are provided up to the limit shown in the policy.
+              %p
+                Though codes vary by city or region, organizations like the
+                %a{:href => "http://www.nfpa.org", :target => "_blank"}National Fire Protection Agency (NFPA)
+                often produce safety codes and other recommendations that are adopted by various states and municipalities. Without question, the age and location of the building can either exacerbate or reduce the need for Ordinance or Law Coverage. 
+              %p.hide
+                %a{:onclick => "return toggleMe('hide210')", :href => "#hide210"}^ Show/Hide
+
+            %a{:name => "hide211", :onclick => "return toggleMe('hide211')"}
+              %h2 Business Income & Extra Expense >
+            #hide211{:style => "display:none"}
+              %p Business income provides coverage to the Bar operator if a direct loss at the property results in the temporary (or extended) inability to resume operations. Extra expense provides coverage for additional costs incurred after a physical loss (like a fire, theft, water damage) in two ways: (1) costs to avoid the suspension of business by moving to at a temporary location-probably unlikely for a Bar or Tavern; or (2) costs to minimize business suspension if operations must be ceased for a period of time.
+              %p Bars, Taverns and Nightclubs should strongly consider carrying Business Income and Extra Expense coverage, since remaining in operation after a property loss will prevent loss of customer base or damage to reputation. Furthermore, if the Bar owner relies solely on the revenue stream of the bar establishment for his or her livelihood, Business Income will replace lost profits and income while the building is being repaired and operations are ceased.
+              %p.hide
+                %a{:onclick => "return toggleMe('hide211')", :href => "#hide211"}^ Show/Hide
+
+          .spacer
+
+            
+
+          %a{:name => @sub3[1]}
+          .section.no-image
+            %h1=@sub3[0]
             %p Click each section to expand information.
 
             %a{:name => "hide1", :onclick => "return toggleMe('hide1')"}
-              %h2 Liquor Liability >
+              %h2 General Liability - Premises, Operations, and Products >
             #hide1{:style => "display:none"}
-              %p.sm
-                Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim
-              %p.sm
-                Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim
+              %p
+                Provides coverage when the insured bar is legally obligated to pay for a patron's injuries. General Liability typically includes:
+              %p.indent
+                1.	Bodily Injury to a guest or patron.
+                %br 
+                2.	Property damage 
+                %br 
+                3.	Fire or Tenants Legal Liability
+                %br 
+                4.	Personal Injury and/or Advertising Injury provides coverage for specific acts of the insured: 
+                %br 
+                &mdash; Improper arrest, detainment or incarceration; 
+                %br 
+                &mdash; Detrimental prosecution;
+                %br 
+                &mdash; Wrongful eviction from, entry into, or invasion of the rights to private occupancy of a place that a person occupies, when done by or on behalf of its owner, landlord or lessor; 
+                %br 
+                &mdash; Any oral or written publication, in any way, of material that libels or slanders a person or organization or is derogatory of another person's or organization's goods, products or services; 
+                %br 
+                &mdash; Any oral or written publication, in any way, of material that infringes on a person's right of privacy; 
+                %br 
+                &mdash; The use of somebody else's advertising idea in an advertisement; or 
+                %br 
+                &mdash; Infringing on the copyright, trade dress or slogan belonging to somebody else in an advertisement. 
+                %br 
+                5.	Products Liability
+                
               %p.hide
-                %a{:onclick => "return toggleMe('hide1')", :href => "#hide1"}^ Show/Hide
-
-
-            %a{:name => "hide2", :onclick => "return toggleMe('hide2')"}
-              %h2 General Liability >
-            #hide2{:style => "display:none"}
-              %p.sm Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim
-              %p.hide
-                %a{:onclick => "return toggleMe('hide2')", :href => "#hide2"}^ Show/Hide
+                %a{:onclick => "return toggleMe('hide1')", :href => "#hide1"}^ Hide
 
             %a{:name => "hide3", :onclick => "return toggleMe('hide3')"}
-              %h2 Property >
+              %h2 Liquor Liability or Dram Shop Liability >
             #hide3{:style => "display:none"}
-              %p.sm Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor
-              %p.sm Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim
+              %p Provides coverage to the bar for its legal liability imposed by serving alcoholic beverages. Liquor Liability laws depend on state statutes. Stricter states impose a high level of responsibility on the bar owner, particularly for damages that arise from over-serving an intoxicated patron or serving to a minor. 
+              %p By definition, Bars and Taverns are in the business of serving beer, wine or spirits, and therefore should carry liquor liability coverage, since no coverage would be available under the General Liability Policy. 
               %p.hide
                 %a{:onclick => "return toggleMe('hide3')", :href => "#hide3"}^ Show/Hide
                 
-            %a{:name => "hide3", :onclick => "return toggleMe('hide4')"}
-              %h2 Crime >
+            %a{:name => "hide4", :onclick => "return toggleMe('hide4')"}
+              %h2 Assault & Battery Liability Extension (Or Exclusion) >
             #hide4{:style => "display:none"}
-              %p.sm Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor
-              %p.sm Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim
+              %p Provides coverage for bodily injury to patrons arising from an assault or battery taking place at the bar establishment. 
+              %p Insurance carriers will typically furnish Assault & Battery coverage as a built in component within a General Liability policy for insured's OUTSIDE the bar industry; however, the insurance industry's perception of elevated risk of fights among intoxicated patrons or injury caused to a patron by an overzealous bar employee often lead to exclusions.
+              %p BEWARE: You may have a limitation or full exclusion for Assault and Battery injuries in your policy and not even know it. Many insurance agents who present you with solely LOW COST policies do not carefully review the policy they are providing you.
+              %p BEWARE: Assault and Battery coverage is not consistent. Even policies that provide "buy back" coverage to the bar do so in a restrictive way. All Assault and battery coverage is not created equal.
               %p.hide
                 %a{:onclick => "return toggleMe('hide4')", :href => "#hide4"}^ Show/Hide
                 
             %a{:name => "hide5", :onclick => "return toggleMe('hide5')"}
-              %h2 Assault & Battery >
-            #hide3{:style => "display:none"}
-              %p.sm Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor
-              %p.sm Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim
+              %h2 Special Event Liability >
+            #hide5{:style => "display:none"}
+              %p Provides coverage for the liability arising from Special events or sponsored events, since these events are often beyond the scope of operations covered by the General Liability or Liquor Liability policy carried by the Bar. 
+              %p As a means of segregating the risk from the bar's usual operations and to preserve the limits available on other policies, Bars and Taverns that sponsor or host events, particularly those away from the insured's primary business location should consider a special events policy to address these risks. 
               %p.hide
                 %a{:onclick => "return toggleMe('hide5')", :href => "#hide5"}^ Show/Hide
 
+            %a{:name => "hide6", :onclick => "return toggleMe('hide6')"}
+              %h2 Non-Owned Automobile Liability  >
+            #hide6{:style => "display:none"}
+              %p Provides coverage for the employer when an employee operates a vehicle for business purposes.
+              %p Bars that may hire employees to deliver food in their owned vehicles face a significant non-owned liability risk that can be either impossible or extremely expensive to insure. When delivery is not a practice of the bar or tavern, non-owned auto liability can be included in a policy at a reasonable cost. 
+              %p.hide
+                %a{:onclick => "return toggleMe('hide6')", :href => "#hide6"}^ Show/Hide
 
+            %a{:name => "hide7", :onclick => "return toggleMe('hide7')"}
+              %h2 Employee Benefits Liability  >
+            #hide7{:style => "display:none"}
+              %p Provides coverage to the bar or tavern for damages that result from incorrect handling of an employee benefits program. 
+              %p.hide
+                %a{:onclick => "return toggleMe('hide7')", :href => "#hide7"}^ Show/Hide
 
+            %a{:name => "hide8", :onclick => "return toggleMe('hide8')"}
+              %h2 Equipment Breakdown Coverage (Boiler & Machinery) >
+            #hide8{:style => "display:none"}
+              %p Modern EPL policies provide coverage for two primary types of losses: 
+              %p.indent
+                1.	Lawsuits or claims filed by employees against the employer, including current, prospective, and past employees, alleging discrimination, wrongful termination, sexual harassment, or failure to comply with statutory hiring requirements and practices. 
+                %br
+                2.	Lawsuits or claims filed by third-parties against the employer, including patrons and vendors, alleging discrimination or harassment. 
+              %p
+                For additional information relating to EPL coverage and incidents of claims, please visit
+                %a{:href => "www.hillusher.com/epl"}
+                Hill & Usher.
+              %p.hide
+                %a{:onclick => "return toggleMe('hide8')", :href => "#hide8"}^ Show/Hide
 
+            %a{:name => "hide9", :onclick => "return toggleMe('hide9')"}
+              %h2 Workers Compensation & Employers Liability >
+            #hide9{:style => "display:none"}
+              %p Provides coverage to the bar or tavern for injuries, including diseases, to employees while working for the establishment. Benefit levels provided to the employee are established by state statute and do vary widely. The rates charged by the Workers' Compensation carrier are often established at the state level, though not in every case.
+              %p In order to avoid fines or potentially extreme out-of-pocket expenses to pay for an employee injury, Bars and Taverns should always carry Workers' Compensation.
+              %p BEWARE: Owners of corporations and sole proprietorships often elect to "exclude" themselves from Workers' Compensation coverage to either save premium dollars or because coverage is thought to be in place through a medical insurance plan. We  view this as a mistake for several reasons: (1) The likelihood of an owner becoming injured while at the bar is often exacerbated by the need to fill in for other employees; (2) The bar owner may operate his a motor vehicle on behalf of the bar and become severely injured; (3) The bar owner pays no deductible under a Workers' Compensation policy, but almost always does under a health plan; (4) The bar owner could lose significant work time and earnings recovering from a work-related injury, which is compensable under a Workers' Compensation policy; (5) The bar owner's health insurance may restrict coverage for work-related injuries; and (6) Workers' Compensation is relatively inexpensive in cost when compared to health insurance premiums.
+              %p.hide
+                %a{:onclick => "return toggleMe('hide9')", :href => "#hide9"}^ Show/Hide
               
-              
+            %a{:name => "hide2", :onclick => "return toggleMe('hide2')"}
+              %h2 Excess or Umbrella Liability >
+            #hide2{:style => "display:none"}
+              %p Provides increased limits of coverage for General Liability and other specified coverages.
+              %p.hide
+                %a{:onclick => "return toggleMe('hide2')", :href => "#hide2"}^ Show/Hide
+
+
+            
       #four.sidebar.right
+        .text
+          %h1 Coverage Details
+          %p The descriptions of coverage provided to you on this website do not alter or replace the actual policy issued to your firm. For an exact explanation of coverage, please refer to the policy. In the event of a claim, the actual policy in force at the time the loss occurred will dictate coverage and limits.
         .button
           %h1 APPLY FORM
           .pdf
