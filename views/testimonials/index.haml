@@ -1,9 +1,16 @@
-- @title = " | Testimonial"
+- @title = " | Testimonials"
 - @subtitle = ""
 - @body_class = "three"
+- @section = params[:testimonial] || "bobSacamano"
 
-%link{:href => "stylesheets/body-3.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
-%script{:charset => "utf-8", :src => "javascripts/jquery.prettyPhoto.js", :type => "text/javascript"}
+- @sub1 = ["John Doe", "/testimonials?testimonial=johnDoe"]
+- @sub2 = ["Jane Doe", "/testimonials?testimonial=janeDoe"]
+- @sub3 = ["Bob Sacamano", "/testimonials?testimonial=bobSacamano"]
+- @sub4 = ["Amy Smith", "/testimonials?testimonial=amySmith"]
+- @sub5 = ["Mary White", "/testimonials?testimonial=maryWhite"]
+
+
+%link{:href => "stylesheets/body-2.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
 
 
 #two.banner
@@ -11,72 +18,41 @@
     .content
       %img.banner{:alt => "", :src => "/images/banner-2.jpg"}
 
-
-
 .body
   .center
     .content
-      #three.main
+      .sidebar.right
+        .subnav
+          %h1 Other Testimonials
+          .link
+            %h5 
+            %p
+              %a{:href => @sub1[1]}
+                =@sub1[0]
+          .link
+            %h5 
+            %p
+              %a{:href => @sub2[1]}
+                =@sub2[0]
+          .link
+            %h5 
+            %p
+              %a{:href => @sub3[1]}
+                =@sub3[0]
+          .link
+            %h5 
+            %p
+              %a{:href => @sub4[1]}
+                =@sub4[0]
+          .link
+            %h5 
+            %p
+              %a{:href => @sub5[1]}
+                =@sub5[0]
+
+          
+      
+
+      #two.main
         .content
-          %a{:name => "anchor1"}
-          .section.no-image
-            %h1 Our Happy Clients
-            %p Avia Insurance has been providing the food and beverage industry with extensive insurance coverage to protect from loss for ?? years, cultivating long-term relationships with each of its clients. Please browse our image gallery to view some of our actual clients and their testimonials.
-            %ul.gallery.clearfix
-              %li
-                %a{:href => "images/gallery/fullscreen/1.jpg", :rel => "prettyPhoto[gallery2]", :title => "Caption"}
-                  %img{:alt => "Title", :src => "images/gallery/thumbnails/t_1.jpg"}/
-              %li
-                %a{:href => "images/gallery/fullscreen/2.jpg", :rel => "prettyPhoto[gallery2]", :title => "Caption"}
-                  %img{:alt => "Title", :src => "images/gallery/thumbnails/t_2.jpg"}/
-              %li
-                %a{:href => "images/gallery/fullscreen/3.jpg", :rel => "prettyPhoto[gallery2]", :title => "Caption"}
-                  %img{:alt => "Title", :src => "images/gallery/thumbnails/t_3.jpg"}/
-              %li
-                %a{:href => "images/gallery/fullscreen/4.jpg", :rel => "prettyPhoto[gallery2]", :title => "Caption"}
-                  %img{:alt => "Title", :src => "images/gallery/thumbnails/t_4.jpg"}/
-              %li
-                %a{:href => "images/gallery/fullscreen/5.jpg", :rel => "prettyPhoto[gallery2]", :title => "Caption"}
-                  %img{:alt => "Title", :src => "images/gallery/thumbnails/t_5.jpg",}/
-              %li
-                %a{:href => "images/gallery/fullscreen/6.jpg", :rel => "prettyPhoto[gallery2]", :title => "Caption"}
-                  %img{:alt => "Title", :src => "images/gallery/thumbnails/t_6.jpg"}/
-              / %li
-              /                %a{:href => "images/gallery/fullscreen/7.jpg", :rel => "prettyPhoto[gallery2]", :title => "Caption"}
-              /                  %img{:alt => "Title", :src => "images/gallery/thumbnails/t_7.jpg"}/
-              /              %li
-              /                %a{:href => "images/gallery/fullscreen/8.jpg", :rel => "prettyPhoto[gallery2]", :title => "Caption"}
-              /                  %img{:alt => "Title", :src => "images/gallery/thumbnails/t_8.jpg"}/
-              /              %li
-              /                %a{:href => "images/gallery/fullscreen/9.jpg", :rel => "prettyPhoto[gallery2]", :title => "Caption"}
-              /                  %img{:alt => "Title", :src => "images/gallery/thumbnails/t_9.jpg"}/
-              /              %li
-              /                %a{:href => "images/gallery/fullscreen/10.jpg", :rel => "prettyPhoto[gallery2]", :title => "Caption"}
-              /                  %img{:alt => "Title", :src => "images/gallery/thumbnails/t_10.jpg"}/
-              /              %li
-              /                %a{:href => "images/gallery/fullscreen/11.jpg", :rel => "prettyPhoto[gallery2]", :title => "Caption"}
-              /                  %img{:alt => "Title", :src => "images/gallery/thumbnails/t_11.jpg"}/
-              /              %li
-              /                %a{:href => "images/gallery/fullscreen/12.jpg", :rel => "prettyPhoto[gallery2]", :title => "Caption"}
-              /                  %img{:alt => "Title", :src => "images/gallery/thumbnails/t_12.jpg"}/
-
-        
-   
-%script{:charset => "utf-8", :type => "text/javascript"}
-  $(document).ready(function(){
-  $("area[rel^='prettyPhoto']").prettyPhoto();
-  
-  $(".gallery:first a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'pp_default',slideshow:3000, autoplay_slideshow: false});
-  $(".gallery:gt(0) a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'fast',slideshow:10000, hideflash: true});
-  
-  $("#custom_content a[rel^='prettyPhoto']:first").prettyPhoto({
-  custom_markup: '<div id="map_canvas" style="width:260px; height:265px"></div>',
-  changepicturecallback: function(){ initialize(); }
-  });
-  
-  $("#custom_content a[rel^='prettyPhoto']:last").prettyPhoto({
-  custom_markup: '<div id="bsap_1259344" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6"></div><div id="bsap_1237859" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6" style="height:260px"></div><div id="bsap_1251710" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6"></div>',
-  changepicturecallback: function(){ _bsap.exec(); }
-  });
-  });
-
+          = render "/testimonials/" + @section + "/index.haml"
