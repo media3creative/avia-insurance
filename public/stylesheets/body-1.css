@@ -442,7 +442,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 .container-setup p.link, .body .center .content .left a.container p.link, .body .center .content .middle a.container p.link, .body .center .content .right a.container p.link {
   position: absolute;
-  bottom: 15px;
+  bottom: 9px;
   left: 22.5px;
   display: inline;
   color: #6c9e1d;
