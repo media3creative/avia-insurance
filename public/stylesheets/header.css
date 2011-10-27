@@ -190,7 +190,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   box-sizing: border-box;
 }
 
-.opaque, .center #logo1 a:hover {
+.opaque {
   opacity: 0.75;
   filter: alpha(opacity=75);
 }
