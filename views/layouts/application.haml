@@ -8,8 +8,8 @@
 - @link5 = ["Contact", "/contact"]
 
 // FOOTER LINKS
-- @linkA1 = ["832-252-9071", "/path"]
-- @linkA2 = ["info@aviainsurance.com", "mailto:info@aviainsurance.com"]
+- @linkA1 = ["713-493-0119", "/path"]
+- @linkA2 = ["info@aicoverage.com", "mailto:info@aicoverage.com"]
 - @linkA3 = ["link name", "/path"]
 - @linkA4 = ["link name", "/path"]
 - @linkA5 = ["link name", "/path"]
@@ -56,10 +56,7 @@
       //$(document).ready(function () {
         if(
           navigator.userAgent.match(/Android/i) ||
-          navigator.userAgent.match(/webOS/i) ||
-          navigator.userAgent.match(/iPhone/i) ||
-          navigator.userAgent.match(/iPod/i) ||
-          navigator.userAgent.match(/iPad/i)
+          navigator.userAgent.match(/webOS/i)
         ){
           $('head').append('<link rel="stylesheet" href="/stylesheets/mobile.css" type="text/css" />');
         }
@@ -184,22 +181,9 @@
           %li
             %a#two.topnav{:href => @link2[1]}
               =@link2[0]
-            .sub
-              %ul
-                / / %li
-                / /   %h2 Header
-                / %li
-                /   %a{:href => "#"} Navigation Link
-                / %li
-                /   %a{:href => "#"} Navigation Link
-                / %li
-                /   %a{:href => "#"} Navigation Link
           / %li
           /   %a#three.topnav{:href => @link3[1]}
           /     =@link3[0]
-          %li
-            %a#three.topnav{:href => @link3[1]}
-              =@link3[0]
           %li
             %a#four.topnav{:href => @link4[1]}
               =@link4[0]
@@ -224,17 +208,6 @@
                 =" - "
                 %a{:href => @linkA2[1]}
                   =@linkA2[0]
-            / .row
-            /   %p
-            /     %a{:href => @linkB1[1], :target => "_blank"} 
-            /       %img.icon{:src => "/images/facebook-color.png"}
-            /       =@linkB1[0]              
-            /     %a{:href => @linkB2[1], :target => "_blank"} 
-            /       %img.icon{:src => "/images/twitter-color.png"}
-            /       =@linkB2[0]
-            /     %a{:href => @linkB3[1], :target => "_blank"} 
-            /       %img.icon{:src => "/images/linkedin-color.png"}
-            /       =@linkB3[0] 
               
                   
     .m3c-bar
